@@ -12,3 +12,8 @@ Projet réalisé avec les soutiens suivants à mon imagination défaillante :
 * [Prénoms anciens pour filles](https://www.legrenierdelisette.com/prenoms-anciens-oublies-pour-filles/)
 * [Familles subsistantes de la noblesse française](https://fr.wikipedia.org/wiki/Familles_subsistantes_de_la_noblesse_fran%C3%A7aise)
 * [Prénom mixte](https://fr.wikipedia.org/wiki/Pr%C3%A9nom_mixte)
+
+Démo
+----
+
+Une démo est disponible [ici](http://setebos.fr/names/).
