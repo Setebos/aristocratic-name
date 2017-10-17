@@ -1,0 +1,40 @@
+.title-background {
+	width: 100%;
+	background-image: url("../img/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	min-height: 320px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 4em;
+	color: white;
+	font-weight: bold;
+}
+
+h2 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+#name {
+	text-align: center;
+	margin-top: 50px;
+	font-size: x-large;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.refresh-button {
+	text-align: center;
+	margin-top: 60px;
+}
+
+#gender-form {
+	margin-bottom: 15px;
+}
