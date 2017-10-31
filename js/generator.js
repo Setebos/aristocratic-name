@@ -85,16 +85,25 @@ const lastNames = [
 	"de Laboissière",
 	"de Faucigny-Lucinge",
 	"de Montesquiou-Fezensac",
-	"de Châteauneuf-Randon du Tournel",
-	"d'Angerville d'Auvrecher",
-	"d'Anthouard de Vraincourt",
-	"d'Archambault de Montfort",
-	"de Bazelaire de Boucheporn",
-	"de Goislard de Monsabert",
+	"de Châteauneuf-Randon",
+	"d'Angerville",
+	"d'Anthouard",
+	"d'Archambault",
+	"de Bazelaire",
+	"de Goislard",
 	"de Raimbouville",
-	"de Guéheneuc de Boishue",
-	"de Gondrecourt de Kermadec",
-	"de Kerguiziau de Kervasdoué",
+	"de Guéheneuc",
+	"de Gondrecourt",
+	"de Kerguiziau",
+	"du Tournel",
+	"d'Auvrecher",
+	"de Vraincourt",
+	"de Montfort",
+	"de Boucheporn",
+	"de Boishue",
+	"de Monsabert",
+	"de Kermadec",
+	"de Kervasdoué",
 ];
 
 const firstNames = {
@@ -112,13 +121,17 @@ $(document).ready(function () {
 });
 
 const createName = function(gender) {
-	const lastName = lastNames.randomElement();
+	const lastName1 = lastNames.randomElement();
+	const lastName2 = lastNames.filter((value) => {
+		return value != lastName1;
+	}).randomElement();
+
 	const firstName1 = firstNames[gender].randomElement();
 	const firstName2 = firstNames[gender].filter((value) => {
 		return value != firstName1;
 	}).randomElement();
 
-	const name = `${firstName1}-${firstName2} ${lastName}`;
+	const name = `${firstName1}-${firstName2} ${lastName1} ${lastName2}`;
 
 	$('#name').html(name);
 }
